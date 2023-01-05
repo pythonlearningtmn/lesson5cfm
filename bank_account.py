@@ -27,37 +27,38 @@
 Для реализации основного меню можно использовать пример ниже или написать свой
 """
 
-balans = 0
-goods = []
-cost = []
-while True:
-    print('\n1. пополнение счета')
-    print('2. покупка')
-    print('3. история покупок')
-    print('4. выход')
+def bank_acc():
+    balans = 0
+    goods = []
+    cost = []
+    while True:
+        print('\n1. пополнение счета')
+        print('2. покупка')
+        print('3. история покупок')
+        print('4. выход')
 
-    choice = input('Выберите пункт меню - ')
-    if choice == '1':
-        deposit = float(input('\nВведите сумму на сколько пополнить счет --> '))
-        if deposit > 0:
-            balans += deposit
-        print(f'На Вашем счёте --> {balans} у.е.')
-    elif choice == '2':
-        purchase = float(input('\nВведите сумму покупки --> '))
-        if purchase > 0:
-            if balans >= purchase:
-                balans -= purchase
-                name_goods = input('Введите название покупки (наименование товара) --> ')
-                goods.append(name_goods)
-                cost.append(purchase)
-            else:
-                print('Недостаточно средств на счёте')
-        print(f'На Вашем счёте --> {balans} у.е.')
-    elif choice == '3':
-        print('\nИстория покупок')
-        for i in range(len(goods)):
-            print(f'{goods[i]} --> {cost[i]}')
-    elif choice == '4':
-        break
-    else:
-        print('Неверный пункт меню')
+        choice = input('Выберите пункт меню - ')
+        if choice == '1':
+            deposit = float(input('\nВведите сумму на сколько пополнить счет --> '))
+            if deposit > 0:
+                balans += deposit
+            print(f'На Вашем счёте --> {balans} у.е.')
+        elif choice == '2':
+            purchase = float(input('\nВведите сумму покупки --> '))
+            if purchase > 0:
+                if balans >= purchase:
+                    balans -= purchase
+                    name_goods = input('Введите название покупки (наименование товара) --> ')
+                    goods.append(name_goods)
+                    cost.append(purchase)
+                else:
+                    print('Недостаточно средств на счёте')
+            print(f'На Вашем счёте --> {balans} у.е.')
+        elif choice == '3':
+            print('\nИстория покупок')
+            for i in range(len(goods)):
+                print(f'{goods[i]} --> {cost[i]}')
+        elif choice == '4':
+            break
+        else:
+            print('Неверный пункт меню')

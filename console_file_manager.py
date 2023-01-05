@@ -51,7 +51,12 @@
 5. Посмотреть разбор дз по функциям, если требуется, то сделать работу надо ошибками.1. Создать новый проект ""Консольный файловый менеджер"
 """
 
+import os
+import sys
+import shutil
+
 while True:
+    print('\nОсновное меню:')
     print('1. создать папку')
     print('2. удалить (папку/файл)')
     print('3. копировать (папку/файл)')
@@ -65,29 +70,43 @@ while True:
     print('11. смена рабочей директории')
     print('12. выход')
 
-    choice = input('Выберите пункт меню - ')
+    choice = input('Выберите пункт меню --> ')
     if choice == '1':
-        pass
+        name = input('Введите имя папки --> ')
+        os.mkdir(name)
     elif choice == '2':
-        pass
+        name = input('Введите имя папки или файла --> ')
+        if os.path.isdir(name):
+            os.rmdir(name)
+        elif os.path.isfile(name):
+            os.remove(name)
     elif choice == '3':
-        pass
+        name = input('Введите имя исходной папки или файла --> ')
+        name_copy = input('Введите имя новой папки или файла --> ')
+        if os.path.isdir(name):
+            shutil.copytree(name, name_copy)
+        elif os.path.isfile(name):
+            shutil.copyfile(name, name_copy)
     elif choice == '4':
-        pass
+        print(os.listdir())
     elif choice == '5':
-        pass
+        print(list(f for f in os.listdir() if os.path.isdir(f)))
     elif choice == '6':
-        pass
+        print(list(f for f in os.listdir() if os.path.isfile(f)))
     elif choice == '7':
-        pass
+        print(os.uname())
     elif choice == '8':
-        pass
+        print(sys.copyright)
     elif choice == '9':
-        pass
+        from victorina import victory
+        victory()
     elif choice == '10':
-        pass
+        from bank_account import bank_acc
+        bank_acc()
     elif choice == '11':
-        pass
+        name = input('Введите путь новой директории --> ')
+        os.chdir(name)
+        print(os.getcwd())
     elif choice == '12':
         break
     else:
