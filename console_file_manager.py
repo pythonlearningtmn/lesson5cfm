@@ -67,26 +67,28 @@ while True:
 
     choice = input('Выберите пункт меню - ')
     if choice == '1':
-        deposit = float(input('\nВведите сумму на сколько пополнить счет --> '))
-        if deposit > 0:
-            balans += deposit
-        print(f'На Вашем счёте --> {balans} у.е.')
+        pass
     elif choice == '2':
-        purchase = float(input('\nВведите сумму покупки --> '))
-        if purchase > 0:
-            if balans >= purchase:
-                balans -= purchase
-                name_goods = input('Введите название покупки (наименование товара) --> ')
-                goods.append(name_goods)
-                cost.append(purchase)
-            else:
-                print('Недостаточно средств на счёте')
-        print(f'На Вашем счёте --> {balans} у.е.')
+        pass
     elif choice == '3':
-        print('\nИстория покупок')
-        for i in range(len(goods)):
-            print(f'{goods[i]} --> {cost[i]}')
+        pass
     elif choice == '4':
+        pass
+    elif choice == '5':
+        pass
+    elif choice == '6':
+        pass
+    elif choice == '7':
+        pass
+    elif choice == '8':
+        pass
+    elif choice == '9':
+        pass
+    elif choice == '10':
+        pass
+    elif choice == '11':
+        pass
+    elif choice == '12':
         break
     else:
         print('Неверный пункт меню')
