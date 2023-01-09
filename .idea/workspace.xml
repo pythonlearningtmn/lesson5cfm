@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07bb062f-6aaa-4db0-a6b2-52f0ae69d42e" name="Changes" comment="Добавлен файл test_filemanager.py">
+    <list default="true" id="07bb062f-6aaa-4db0-a6b2-52f0ae69d42e" name="Changes" comment="Исправлены ошибки в файле bank_account.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bank_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/bank_account.py" afterDir="false" />
     </list>
@@ -60,7 +60,28 @@
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests in test_filemanager.py">
+  <component name="RunManager" selected="Python.console_file_manager">
+    <configuration name="console_file_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="lesson5cfm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/console_file_manager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="new" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lesson5cfm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,20 +117,6 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_filemanager.test_mkdir_rmdir" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="lesson5cfm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_filemanager.test_mkdir_rmdir&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests in lesson5cfm" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="lesson5cfm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.console_file_manager" />
         <item itemvalue="Python tests.Python tests in test_filemanager.py" />
         <item itemvalue="Python tests.Python tests for test_filemanager.test_chdir" />
         <item itemvalue="Python.new" />
         <item itemvalue="Python tests.Python tests in lesson5cfm" />
-        <item itemvalue="Python tests.Python tests for test_filemanager.test_mkdir_rmdir" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +227,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673078968208</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="В файл bank_account.py добавлено сохранение баланса в файл и чтение баланса из файла">
+      <created>1673228514569</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673228514569</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Исправлены ошибки в файле bank_account.py">
+      <created>1673229448085</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673229448085</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -272,6 +293,8 @@
     <MESSAGE value="Commit после merge" />
     <MESSAGE value="Добавлен файл test_python.py" />
     <MESSAGE value="Добавлен файл test_filemanager.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлен файл test_filemanager.py" />
+    <MESSAGE value="В файл bank_account.py добавлено сохранение баланса в файл и чтение баланса из файла" />
+    <MESSAGE value="Исправлены ошибки в файле bank_account.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлены ошибки в файле bank_account.py" />
   </component>
 </project>
