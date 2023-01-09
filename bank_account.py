@@ -30,14 +30,12 @@
 import os
 def bank_acc():
     balans = 0.0
+    balans_read = ''
     history_orders = ''
     if os.path.exists('balans.txt'):
         with open('balans.txt', 'r') as b:
             balans_read = b.read()
-            if balans_read == '':
-                balans = 0.0
-            else:
-                balans = float(balans_read)
+            balans = 0.0 if balans_read == '' else float(balans_read)
     if os.path.exists('history.txt'):
         with open('history.txt', 'r') as h:
             history_orders = h.read()
@@ -50,8 +48,7 @@ def bank_acc():
         choice = input('Выберите пункт меню - ')
         if choice == '1':
             deposit = float(input('\nВведите сумму на сколько пополнить счет --> '))
-            if deposit > 0:
-                balans += deposit
+            balans = balans + deposit if deposit > 0 else balans
             print(f'На Вашем счёте --> {balans} у.е.')
         elif choice == '2':
             purchase = float(input('\nВведите сумму покупки --> '))

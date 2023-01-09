@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07bb062f-6aaa-4db0-a6b2-52f0ae69d42e" name="Changes" comment="В файл console_file_manager.py добавлена опция сохранения содержимого рабочей директории в файл">
-      <change afterPath="$PROJECT_DIR$/test_new_func.py" afterDir="false" />
+    <list default="true" id="07bb062f-6aaa-4db0-a6b2-52f0ae69d42e" name="Changes" comment="Исправлены ошибки в файле bank_account.py">
+      <change beforePath="$PROJECT_DIR$/victorina.py" beforeDir="false" afterPath="$PROJECT_DIR$/victorina.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lesson6_0" />
+        <entry key="$PROJECT_DIR$" value="lesson7_0" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,15 +51,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/sergeyshishovhome/PycharmProjects/lesson5cfm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/sergeyshishovhome/PycharmProjects/lesson5cfm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python tests.Python tests in test_new_func.py">
+}</component>
+  <component name="RunManager" selected="Python.console_file_manager">
     <configuration name="console_file_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="lesson5cfm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,8 +146,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests in test_new_func.py" />
         <item itemvalue="Python.console_file_manager" />
+        <item itemvalue="Python tests.Python tests in test_new_func.py" />
         <item itemvalue="Python tests.Python tests in test_filemanager.py" />
         <item itemvalue="Python tests.Python tests for test_filemanager.test_chdir" />
         <item itemvalue="Python.new" />
@@ -254,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1673234089426</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Внесены два изменения в файл bank_account.py с использованием тернарного оператора">
+      <created>1673273354538</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1673273354538</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Исправлены ошибки в файле bank_account.py">
+      <created>1673274358271</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673274358271</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -307,9 +321,10 @@
     <MESSAGE value="Добавлен файл test_python.py" />
     <MESSAGE value="Добавлен файл test_filemanager.py" />
     <MESSAGE value="В файл bank_account.py добавлено сохранение баланса в файл и чтение баланса из файла" />
-    <MESSAGE value="Исправлены ошибки в файле bank_account.py" />
     <MESSAGE value="В файл bank_account.py добавлена опция сохранения покупок" />
     <MESSAGE value="В файл console_file_manager.py добавлена опция сохранения содержимого рабочей директории в файл" />
-    <option name="LAST_COMMIT_MESSAGE" value="В файл console_file_manager.py добавлена опция сохранения содержимого рабочей директории в файл" />
+    <MESSAGE value="Внесены два изменения в файл bank_account.py с использованием тернарного оператора" />
+    <MESSAGE value="Исправлены ошибки в файле bank_account.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлены ошибки в файле bank_account.py" />
   </component>
 </project>
