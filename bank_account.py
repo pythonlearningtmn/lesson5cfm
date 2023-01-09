@@ -27,10 +27,20 @@
 Для реализации основного меню можно использовать пример ниже или написать свой
 """
 
+import os
 def bank_acc():
-    balans = 0
-    goods = []
-    cost = []
+    balans = 0.0
+    history_orders = ''
+    if os.path.exists('balans.txt'):
+        with open('balans.txt', 'r') as b:
+            balans_read = b.read()
+            if balans_read == '':
+                balans = 0.0
+            else:
+                balans = float(balans_read)
+    if os.path.exists('history.txt'):
+        with open('history.txt', 'r') as h:
+            history_orders = h.read()
     while True:
         print('\n1. пополнение счета')
         print('2. покупка')
@@ -49,16 +59,18 @@ def bank_acc():
                 if balans >= purchase:
                     balans -= purchase
                     name_goods = input('Введите название покупки (наименование товара) --> ')
-                    goods.append(name_goods)
-                    cost.append(purchase)
+                    history_orders += (name_goods + ' ' + str(purchase) + '\n')
                 else:
                     print('Недостаточно средств на счёте')
             print(f'На Вашем счёте --> {balans} у.е.')
         elif choice == '3':
             print('\nИстория покупок')
-            for i in range(len(goods)):
-                print(f'{goods[i]} --> {cost[i]}')
+            print(history_orders)
         elif choice == '4':
+            with open('balans.txt', 'w') as b:
+                b.write(str(balans))
+            with open('history.txt', 'w') as h:
+                h.write(history_orders)
             break
         else:
             print('Неверный пункт меню')
