@@ -27,10 +27,14 @@
 Для реализации основного меню можно использовать пример ниже или написать свой
 """
 
+import os
 def bank_acc():
     balans = 0
     goods = []
     cost = []
+    if os.path.exists('balans.txt'):
+        with open('balans.txt', 'r') as f:
+            balans = f.read()
     while True:
         print('\n1. пополнение счета')
         print('2. покупка')
@@ -59,6 +63,8 @@ def bank_acc():
             for i in range(len(goods)):
                 print(f'{goods[i]} --> {cost[i]}')
         elif choice == '4':
+            with open('balans.txt', 'w') as f:
+                f.write(balans)
             break
         else:
             print('Неверный пункт меню')
