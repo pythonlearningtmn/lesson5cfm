@@ -30,11 +30,12 @@
 import os
 def bank_acc():
     balans = 0.0
+    balans_read = ''
     history_orders = ''
     if os.path.exists('balans.txt'):
         with open('balans.txt', 'r') as b:
             balans_read = b.read()
-            balans = 0.0 if balans_read == '' else balans = float(balans_read)
+            balans = 0.0 if balans_read == '' else float(balans_read)
     if os.path.exists('history.txt'):
         with open('history.txt', 'r') as h:
             history_orders = h.read()
