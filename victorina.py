@@ -9,10 +9,14 @@
 def victory():
     # Импорт функций из модуля
     from my_functions import get_person_and_question
+    global rounds
 
-    rounds = int(input('\nСколько раз вы хотите играть?'))
-
-    for i in range(rounds):
-        get_person_and_question()
+    try:
+        rounds = int(input('\nСколько раз вы хотите играть?'))
+    except:
+        print('Неверный ввод числа')
+    else:
+        for i in range(rounds):
+            get_person_and_question()
 
     print('Пока!')
