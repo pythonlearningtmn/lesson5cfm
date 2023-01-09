@@ -61,6 +61,7 @@ while True:
     print('2. удалить (папку/файл)')
     print('3. копировать (папку/файл)')
     print('4. просмотр содержимого рабочей директории')
+    print('41. сохранить содержимое рабочей директории в файл')
     print('5. посмотреть только папки')
     print('6. посмотреть только файлы')
     print('7. просмотр информации об операционной системе')
@@ -89,6 +90,12 @@ while True:
             shutil.copyfile(name, name_copy)
     elif choice == '4':
         print(os.listdir())
+    elif choice == '41':
+        with open('listdir.txt', 'w') as lst:
+            fl = ",".join(list(f for f in os.listdir() if os.path.isfile(f)))
+            lst.write(f'files: {fl}\n')
+            dr = ",".join(list(d for d in os.listdir() if os.path.isdir(d)))
+            lst.write(f'dirs: {dr}')
     elif choice == '5':
         print(list(f for f in os.listdir() if os.path.isdir(f)))
     elif choice == '6':
