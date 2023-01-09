@@ -34,7 +34,11 @@ def bank_acc():
     cost = []
     if os.path.exists('balans.txt'):
         with open('balans.txt', 'r') as f:
-            balans = f.read()
+            balans_read = f.read()
+            if balans_read == '':
+                balans = 0
+            else:
+                balans = float(balans_read)
     while True:
         print('\n1. пополнение счета')
         print('2. покупка')
@@ -64,7 +68,7 @@ def bank_acc():
                 print(f'{goods[i]} --> {cost[i]}')
         elif choice == '4':
             with open('balans.txt', 'w') as f:
-                f.write(balans)
+                f.write(str(balans))
             break
         else:
             print('Неверный пункт меню')
